@@ -3,8 +3,9 @@
 Objetivo criar uma calculadora API
 
 # Para fazer:
- API HTTP
- Código fonte livre e aberto
- Licença MIT (permissiva)
- Usando o repositório online
- Usando integração e entrega contínuas
+
+ API HTTP;
+ Código fonte livre e aberto;
+ Licença MIT (permissiva);
+ Usando o repositório online;
+ Usando integração e entrega contínuas;
