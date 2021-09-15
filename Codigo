@@ -1,7 +1,7 @@
 <html>
 <CENTER>
 <FORM NAME="Calculadora">
-<TABLE BORDER=4 WIDTH="250" bgcolor="gray">
+<TABLE BORDER=4 WIDTH="300" bgcolor="blue">
 	<TR>
             <TD ALIGN="CENTER">
 		<INPUT TYPE="text" NAME="Input" SIZE="16" readonly>
