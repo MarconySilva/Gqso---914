@@ -1,12 +1,15 @@
 package main
 
 import (
+	"fmt"
+	"log"
+	"net/http"
+	"os"
+
 	"github.com/gofiber/fiber/v2"
 )
 
 func main() {
-	// Utilizando o framework fiber.
-	// https://github.com/gofiber/fiber
 	app := fiber.New()
 
 	app.Get("/", func(c *fiber.Ctx) error {
@@ -19,5 +22,7 @@ func main() {
 }
 
 func registerHandlers(app *fiber.App) {
-	app.Get("/potencia/:base/:exp", potenciaHandler)
+	http.HandleFunc("/soma/", somaHandler)
+	http.HandleFunc("/sub/", subHandler)
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", os.Getenv("PORT")), nil))
 }
